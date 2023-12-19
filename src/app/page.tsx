@@ -22,11 +22,22 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center">
-          
-          <div className=' w-96 h-[500px] shrink-0 rounded-[32px] border border-solid border-[#dfdfdf00]'>
+      <div className="flex flex-col justify-center items-center mb-10">
+
+        <div className='flex w-96 h-[500px] shrink-0 rounded-[32px] border border-solid
+         border-[rgba(223,223,223)]   main-logo_bg'>
+          <div className="flex bg-main-logo w-full h-full bg-no-repeat bg-center">
 
           </div>
+        
+        </div>
+        
+        <div className="flex">
+          
+        </div>
+
+
+
       </div>
     </main>
   )
