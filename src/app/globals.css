@@ -1,5 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+.text_bg {
+  background: linear-gradient(181deg, #e9e9ea 50%, #151518 179.01%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @tailwind utilities;
 
 :root {
@@ -18,10 +26,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272727;
+  /* border-radius: 8px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a8989;
+  border-radius: 8px;
 }
