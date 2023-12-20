@@ -1,17 +1,17 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+    trailingSlash: true,
     output: 'export',
+    images: {
+        unoptimized: true,
+        domains: ["res.cloudinary.com"]
+    },
 
-    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-    // trailingSlash: true,
+    reactStrictMode: true,
+    experimental: {
+        forceSwcTransforms: true,
+    },
 
-    // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-    // skipTrailingSlashRedirect: true,
-
-    // Optional: Change the output directory `out` -> `dist`
-    // distDir: 'dist',
 }
 
 module.exports = nextConfig
