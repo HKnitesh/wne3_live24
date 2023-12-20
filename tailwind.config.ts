@@ -17,6 +17,9 @@ const config: Config = {
       colors: {
         'black_2f': '#2f2f2f',
         'gray_a6': '#a6a5ad',
+        'gray_c2': '#c2c2c2',
+        'black_0d': '#0d1014',
+        
       },
     },
   },
