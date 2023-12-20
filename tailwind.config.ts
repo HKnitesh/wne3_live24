@@ -18,8 +18,15 @@ const config: Config = {
         'black_2f': '#2f2f2f',
         'gray_a6': '#a6a5ad',
         'gray_c2': '#c2c2c2',
+        'gray_9c': '#9c9c9c',
+        'gray_63': '#636363',
         'black_0d': '#0d1014',
+        'black_11': '#11161c',
+        'black_223': 'rgba(223, 223, 223)',
         
+      },
+      borderRadius: {
+        '4xl': '32px',
       },
     },
   },
