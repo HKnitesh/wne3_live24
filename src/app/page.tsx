@@ -136,7 +136,7 @@ export default function Home() {
                 </span>
 
                 <span className='text-sm font-normal leading-5 tracking-wide'>
-                  Our extension will help you personalise your resume to the job you apply to, Now isn't that life made easy.
+                  Our extension will help you personalise your resume to the job you apply to, Now isn&apos;t  that life made easy.
                 </span>
               </div>
             </div>
