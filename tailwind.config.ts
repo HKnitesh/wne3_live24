@@ -20,8 +20,10 @@ const config: Config = {
         'gray_c2': '#c2c2c2',
         'gray_9c': '#9c9c9c',
         'gray_63': '#636363',
+        'gray_71': '#717171',
         'black_0d': '#0d1014',
         'black_11': '#11161c',
+        'black_19': '#191e23',
         'black_223': 'rgba(223, 223, 223)',
         
       },

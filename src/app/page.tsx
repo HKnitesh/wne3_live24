@@ -151,6 +151,22 @@ export default function Home() {
 
 
 
+      {/* magic shopping */}
+      <div className="flex  w-full h-auto items-start shrink-0  ">
+        
+        <div className="flex flex-row w-full mx-24 my-12 rounded-4xl py-16 px-8 justify-between bg-black_19">
+          <div className="flex flex-col items-start gap-8 shrink-0">
+            
+          </div>
+          <Image
+            src='/Artwork.svg'
+            width={289}
+            height={274}
+            alt="Artwork"
+          />
+        </div>
+      </div>
+
     </main>
   )
 }
