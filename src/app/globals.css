@@ -20,6 +20,16 @@
   box-shadow: 0px -1.385px 5.538px 0.692px rgba(188, 140, 255, 0.33);
 }
 
+.magic_btn {
+  @apply py-3 px-[60px] items-center flex-[1_0%_0%] focus:text-white focus:font-bold focus:border-b
+          text-gray_71 text-center text-2xl font-light leading-8  focus:border-black_223;
+
+  &:focus {
+    background: linear-gradient(227deg, #11161c 26.92%, #282c31 69.62%);
+  }
+}
+
+
 @tailwind utilities;
 
 :root {
@@ -44,7 +54,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  background-color: #000000;
+  background-color: #0d1116;
 }
 
 ::-webkit-scrollbar {

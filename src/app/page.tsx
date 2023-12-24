@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { manrope, spaceMono, spaceGro } from "./components/nextFont"
-import { CustomButton } from './components'
+import { CustomButton, BigText, OpCard } from './components';
+import { User, Link } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -10,9 +11,10 @@ export default function Home() {
       {/* introduction part */}
       <div className="inline-flex flex-col justify-center items-center py-64 pt-32 pb-40 gap-14">
 
-        <div className='flex flex-col text-center text-[56px] font-semibold lead-[56px]'>
-          <span className='text_bg'>Reimaging shopping experience</span>
-          <span className='mt-[-26px] text_bg'>indistinguishable from magic</span>
+
+        <div className='flex flex-col items-center'>
+          <BigText title="Reimaging shopping experience" />
+          <BigText title="indistinguishable from magic" style="mt-[-26px] " />
         </div>
 
         <div className="flex w-[695px] text-center text-2xl font-normal leading-9 text-gray_a6">
@@ -58,10 +60,9 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col gap-14 mt-20 text-center text-[56px] font-bold lead-[56px]'>
-          <div className='flex flex-col gap-1'>
-
-            <span className='text_bg'>From an idea to reality,</span>
-            <span className='mt-[-26px] text_bg'>be a part of the change</span>
+          <div className='flex flex-col gap-1 items-center'>
+            <BigText title="From an idea to reality," />
+            <BigText title="be a part of the change" style="mt-[-26px] " />
           </div>
 
           <div className="flex flex-row  justify-center gap-8">
@@ -85,10 +86,9 @@ export default function Home() {
       {/* whats set us apart */}
       <div className="flex flex-col mb-20 gap-12 flex-shrink-0 items-center w-full py-16 px-28">
 
-        <div className='flex flex-col text-center gap-14'>
-          <span className='text_bg text-[56px] font-bold lead-[56px]'>
-            What sets us apart
-          </span>
+        <div className='flex flex-col text-center gap-14 items-center'>
+          <BigText title="What sets us apart" />
+
           <span className='w-[695px] text-gray_9c text-xl font-normal leading-7'>
             From now on, you don’t have to wait for any product to come to the stores. If you know what you want, you start shopping
           </span>
@@ -149,14 +149,147 @@ export default function Home() {
 
       </div>
 
+      {/* people comment */}
+      <div className=" inline-flex flex-col justify-center items-center shrink-0 gap-14 w-full
+       bg-black_19 h-[1232px] py-64 ">
 
+        <User
+          name="Junior Garcia"
+          description='hare Krishna'
+          // {(
+          //   <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
+          //     @jrgarciadev
+          //   </Link>
+          // )}
+          avatarProps={{
+            src: "/userprofile/Ellipse.svg"
+          }}
+        />
+
+        <div className="flex flex-col gap-14 text-[40px] w-[800px] font-semibold leading-[56px] text-gray_76 text-center ">
+
+          <div>
+            With an <span className='text-white'>open marketplace</span>, you have the
+            last word in your products. We truly
+            believe in the saying, “ if you can <span className='text-white'>dream it</span>,
+            you can <span className='text-white'>do it</span>”
+          </div>
+
+          <div>
+            See what the <span className='text-white'>creators like you</span> are
+            shopping for on WNE3. 
+          </div>
+        </div>
+        <CustomButton
+          title="Get early access"
+          customStyle="bg-white text-black"
+        />
+
+      </div>
+
+
+      {/* How the magic is made */}
+      <div className="flex flex-col px-28 pt-28 pb-16 mb-14 w-full gap-14 items-center rounded-t-4xl shadow-3xl">
+
+        <BigText title="How the magic is made" style="" />
+        <div className="flex items-start justify-center gap-8">
+
+          <button className='magic_btn '>
+            Simple language
+          </button>
+          <button className='magic_btn '>
+            Getting the right product
+          </button>
+          <button className='magic_btn'>
+            Shipping it to you
+          </button>
+        </div>
+
+        {/* items detail */}
+        <div className="flex flex-row w-full   py-16 px-8 justify-between ">
+          <div className="flex flex-col w-[562px] items-start gap-8 ">
+
+            <div className="flex flex-col">
+              <BigText title="01" />
+              <span className='text-white text-4xl font-semibold leading-10 '>
+                The prompt is easy
+              </span>
+            </div>
+
+            <span className='text-lg leading-7 tracking-wide text-gray_b0 font-normal'>
+              The prompt is broken down to simpler commands that could be understood and extracted
+            </span>
+
+            <CustomButton
+              title="Read documentation"
+              customStyle="bg-black_2f text-white"
+            />
+          </div>
+          <Image
+            src='/Artwork.svg'
+            width={289}
+            height={274}
+            alt="Artwork"
+          />
+        </div>
+      </div>
+
+
+      {/* Simplifying the world of options */}
+      <div className="flex flex-col mb-14 gap-12 rounded-t-4xl shadow-3xl px-28 w-full">
+
+        <div className="pt-28 pb-16 self-center">
+          <BigText title="Simplifying the world of options" style="" />
+        </div>
+
+        <div className="flex items-start content-start justify-center gap-8 flex-wrap mt-12">
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+          <OpCard
+            head="The prompt is more than just a few words"
+            body=" The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization "
+          />
+        </div>
+
+      </div>
 
       {/* magic shopping */}
-      <div className="flex  w-full h-auto items-start shrink-0  ">
-        
+      <div className="flex  w-full h-auto items-start shrink-0  mb-10">
+
         <div className="flex flex-row w-full mx-24 my-12 rounded-4xl py-16 px-8 justify-between bg-black_19">
-          <div className="flex flex-col items-start gap-8 shrink-0">
-            
+          <div className="flex flex-col w-[562px] items-start gap-8 shrink-0">
+
+            <div className="flex flex-col">
+              <BigText title="Try out the magic of" />
+              <BigText title="shopping your mind" style="mt-[-2rem]" />
+            </div>
+
+            <span className='text-lg leading-7 tracking-wide text-gray_76 font-normal'>
+              The prompt is broken down to simpler commands that could be understood and extracted to show you the right visuals that you could take up for further customization
+            </span>
+
+            <CustomButton
+              title="Get early access"
+              customStyle="bg-white text-black"
+            />
           </div>
           <Image
             src='/Artwork.svg'
