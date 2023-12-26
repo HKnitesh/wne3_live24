@@ -93,7 +93,7 @@ export default function Footer() {
 
                     <Link href="/">
                         <Image
-                            src='/Linkedin1.svg'
+                            src='/LinkedIn.png'
                             width={32}
                             height={32}
                             alt="linkedin"
