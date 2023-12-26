@@ -12,12 +12,29 @@
   background: linear-gradient(180deg, #11161c 35.29%, #282c31 174%);
 }
 
+.user_message{
+  @apply flex bg-black_11 py-3 px-6 justify-center items-center gap-1 text-gray_71
+            text-lg font-normal leading-6 tracking-wide
+}
 .generate {
   leading-trim: both;
   text-edge: cap;
   font-feature-settings: "clig" off, "liga" off;
   border: 0.692px solid var(--Gradient-Blue, #38c2ee);
   box-shadow: 0px -1.385px 5.538px 0.692px rgba(188, 140, 255, 0.33);
+}
+
+.border_color {
+  border-radius: 32px;
+  border: 1px solid;
+  /* border-image: rgba(223, 223, 223, 0); */
+  /* box-sizing: content-box; */
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  /* border-radius: 32px; */
+  /* border-image: linear-gradient(to right bottom, #260b3c, #a053df); */
+  border-image: linear-gradient(to right bottom, #59e9ea, #151518);
+  border-image-slice: 1;
 }
 
 .magic_btn {
@@ -28,7 +45,6 @@
     background: linear-gradient(227deg, #11161c 26.92%, #282c31 69.62%);
   }
 }
-
 
 @tailwind utilities;
 

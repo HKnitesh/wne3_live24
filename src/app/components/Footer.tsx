@@ -5,7 +5,7 @@ import { CustomLink } from "./index"
 
 export default function Footer() {
     return (
-        <div className={`flex pt-8 mx-24 mb-14 justify-between items-start border-t border-solid border-gray_63 ${manrope.className}`}>
+        <div className={`flex pt-8 mx-24 pb-14 justify-between items-start border-t border-solid border-gray_63 ${manrope.className}`}>
             {/* company information */}
             <div className="flex flex-row gap-28 items-start">
 
@@ -93,7 +93,7 @@ export default function Footer() {
 
                     <Link href="/">
                         <Image
-                            src='/linkedin.svg'
+                            src='/Linkedin1.svg'
                             width={32}
                             height={32}
                             alt="linkedin"

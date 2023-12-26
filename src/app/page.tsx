@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { manrope, spaceMono, spaceGro } from "./components/nextFont"
 import { CustomButton, BigText, OpCard } from './components';
-import { User, Link } from "@nextui-org/react";
+import { User, Link, Avatar } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
       {/* main logo part */}
       <div className="flex flex-col justify-center items-center mb-28">
 
-        <div className='flex w-96 h-[500px] shrink-0 main-logo_bg border-t border-l border-solid border-black_223'>
+        <div className='flex w-96 h-[500px] shrink-0 main-logo_bg '>
           <div className="flex bg-main-logo w-full h-full bg-no-repeat bg-center">
 
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="flex h-[592px]  justify-center items-start flex-shrink-0 self-stretch gap-8">
 
           <div className="flex flex-[1_0_0%] py-16 px-8 flex-col justify-start items-center 
-          self-stretch bg-black_11 rounded-4xl border-t border-l border-solid border-black_223">
+          self-stretch bg-black_11 rounded-4xl  ">
 
             <div className="flex flex-col gap-8 items-start self-stretch text-white">
               <span className='text-3xl font-semibold leading-10'>
@@ -114,7 +114,7 @@ export default function Home() {
           <div className="flex flex-col w-1/2 gap-8 h-full justify-between">
 
             <div className="flex py-16 px-8 h-full flex-col justify-start items-center 
-          self-stretch bg-black_11 rounded-4xl border-t border-l border-solid border-black_223">
+          self-stretch bg-black_11 rounded-4xl  ">
 
               <div className="flex flex-col gap-8 items-start self-stretch text-white">
                 <span className='text-3xl font-semibold leading-10'>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             <div className="flex py-16 px-8 h-full flex-col justify-start items-center 
-          self-stretch bg-black_11 rounded-4xl border-t border-l border-solid border-black_223">
+          self-stretch bg-black_11 rounded-4xl  ">
 
               <div className="flex flex-col gap-8 items-start self-stretch text-white">
                 <span className='text-3xl font-semibold leading-10'>
@@ -150,21 +150,77 @@ export default function Home() {
       </div>
 
       {/* people comment */}
-      <div className=" inline-flex flex-col justify-center items-center shrink-0 gap-14 w-full
-       bg-black_19 h-[1232px] py-64 ">
+      <div className=" inline-flex flex-col relative justify-center items-center shrink-0 gap-14 w-full
+       bg-black_19 h-[1200px] py-64 ">
 
-        <User
-          name="Junior Garcia"
-          description='hare Krishna'
-          // {(
-          //   <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-          //     @jrgarciadev
-          //   </Link>
-          // )}
-          avatarProps={{
-            src: "/userprofile/Ellipse.svg"
-          }}
-        />
+       
+
+        {/* Ellipse01 */}
+        <div className=" flex  flex-row gap-2 absolute  top-52 left-12">
+          <Avatar src="/userprofile/Ellipse01.svg" className='w-12 h-12'/>
+          <div className=' user_message  rounded-ss-none rounded-3xl'>
+            <strong >Aliens</strong>playing
+            <strong >cricket</strong>on
+            <strong >Saturn</strong>
+          </div>
+        </div>
+
+        {/* Ellipse02 */}
+        <div className=" flex  flex-row-reverse gap-2 absolute top-40">
+          <Avatar src="/userprofile/Ellipse02.svg" className='w-12 h-12'/>
+          <div className='flex flex-col items-start user_message  rounded-se-none rounded-3xl'>
+            <p><strong >futuristic</strong> town of<strong > mumbai</strong></p>
+            <p>on a <strong>black hoodie</strong></p>
+          </div>
+        </div>
+
+        {/* Ellipse03 */}
+        <div className=" flex  flex-row gap-2 absolute top-32 right-1">
+          <Avatar src="/userprofile/Ellipse03.svg" className='w-12 h-12' />
+          <div className=' user_message  rounded-ss-none rounded-3xl'>
+            rendition of the 
+            <strong >last supper</strong>on a
+            <strong >hoodie</strong>
+          </div>
+        </div>
+
+        {/* Ellipse04 */}
+        <div className=" flex  flex-row gap-2 absolute left-32  bottom-96">
+          <Avatar src="/userprofile/Ellipse04.svg" className='w-12 h-12' />
+          <div className='flex flex-col items-start user_message  rounded-ss-none rounded-3xl'>
+            <p><strong >Mickey mouse</strong> </p>
+            <p>drinking <strong>wine</strong> on <strong>shirt</strong></p>
+          </div>
+        </div>
+
+        {/* Ellipse05 */}
+        <div className=" flex  flex-row-reverse gap-2 absolute right-5 bottom-[550px]">
+          <Avatar src="/userprofile/Ellipse05.svg" className='w-12 h-12' />
+          <div className=' user_message  rounded-se-none rounded-3xl'>
+            <strong >summer nights</strong>on
+            <strong >tshirt</strong>
+          </div>
+        </div>
+
+        {/* Ellipse06 */}
+        <div className=" flex  flex-row-reverse gap-2 absolute left-7 bottom-20">
+          <Avatar src="/userprofile/Ellipse06.svg" className='w-12 h-12' />
+          <div className=' user_message  rounded-se-none rounded-3xl'>
+            <strong >summer nights</strong>on
+            <strong >tshirt</strong>
+          </div>
+        </div>
+
+        {/* Ellipse07 */}
+        <div className=" flex  flex-row gap-2 absolute right-56 bottom-11">
+          <Avatar src="/userprofile/Ellipse07.svg" className='w-12 h-12' />
+          <div className=' user_message  rounded-ss-none rounded-3xl'>
+            <strong >Painter</strong>painting an
+            <strong >artwork</strong>like
+            <strong >piccasso</strong>
+          </div>
+        </div>
+        
 
         <div className="flex flex-col gap-14 text-[40px] w-[800px] font-semibold leading-[56px] text-gray_76 text-center ">
 
@@ -177,7 +233,7 @@ export default function Home() {
 
           <div>
             See what the <span className='text-white'>creators like you</span> are
-            shopping for on WNE3. 
+            shopping for on WNE3.
           </div>
         </div>
         <CustomButton
